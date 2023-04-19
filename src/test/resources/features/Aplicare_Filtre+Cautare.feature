@@ -1,7 +1,7 @@
 Feature: Site-ul de anunturi oLx.ro
 
   Background:
-    Given     Accesare Prima Pagina OLX
+    Given     Accesare Prima Pagina "https://www.olx.ro/"
     Then      Acceptare cookie-uri
     And       Inchidere anuntul: Vreau RCA!
 
