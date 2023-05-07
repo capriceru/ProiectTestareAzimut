@@ -29,8 +29,6 @@ public class StartDriver {
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         chromeOptions.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(chromeOptions);
-        //muta fereastra pe al doilea monitor (decomentati daca vreti sa o folositi)
-//        driver.manage().window().setPosition(new Point(2000,0));
         driver.manage().window().maximize();
         sleep(3000);
         String fereastraPrincipala = driver.getWindowHandle();
@@ -52,5 +50,4 @@ public class StartDriver {
         driver =null;
         }
     }
-
 }
