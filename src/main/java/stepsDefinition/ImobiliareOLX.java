@@ -16,6 +16,12 @@ public class ImobiliareOLX {
         sleep(10000);
     }
 
+    @Then("Click pe Doar cu poze")
+    public void DoarCuPoze() throws InterruptedException {
+        StartDriver.getDriver().findElement(By.id("photos")).click();
+        sleep(2000);
+    }
+
     @Then("Introducere filtru Pret De la {string}")
     public void filtrarePret1(String price9) throws InterruptedException {
         StartDriver.getDriver().findElement(By.xpath("//*[@data-testid='range-from-input']"))

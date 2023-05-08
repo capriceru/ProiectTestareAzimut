@@ -1,10 +1,11 @@
 Feature:
   Testarea functionalitatii de cautare
-  Utilizatorul cauta anunturi cu ajutorul filtrelor pe care le ofera site-ul
+  Utilizatorul cauta anunturi cu ajutorul filtrelor pe care le ofera website-ul
 
   Background:
     Given     Accesare Prima Pagina "https://www.olx.ro/"
     Then      Acceptare cookie-uri
+#    And       Inchidere anuntul: Află mai multe
 
 
   Scenario:   Aplicarea filtrelor pentru cautarea anunturilor din categoria Imobiliare
@@ -18,6 +19,7 @@ Feature:
 
   Scenario:   Cautare unui produs in bara de Cautare cu ajutorul Categoriilor principale
     When      Selectarea categoriei de: "Auto, moto si ambarcatiuni"
+#    Then      Click pe subcategoria: "Autoturisme"
     Then      Introducerea "Lamborghini Urus" in bara de cautare
     And       Click pe butonul: Căutare
     And       Folosirea scroll-ului pentru vizualizarea anunturilor

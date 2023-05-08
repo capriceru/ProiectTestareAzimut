@@ -5,6 +5,7 @@ Feature:
   Background:
     Given     Accesare Prima Pagina "https://www.olx.ro/"
     Then      Acceptare cookie-uri
+#    And       Inchidere anuntul: Află mai multe
 
 
   Scenario:   Inregistrare utilizator si extragerea textului din eroarea afisata
