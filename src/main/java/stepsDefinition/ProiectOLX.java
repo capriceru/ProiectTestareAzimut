@@ -58,7 +58,6 @@ public class ProiectOLX {
 
     @And("Click pe: Sunt de acord ci folosirea mijloacelor de comunicare")
     public void acord_mijloace_de_comunicare() throws InterruptedException {
-//        driver.findElement(By.xpath("//*[@data-testid='tick']")).click();
         StartDriver.getDriver().findElement(By.xpath("//div[@role='checkbox']//*[name()='svg']")).click();
         sleep(3000);
     }
