@@ -22,8 +22,8 @@ public class ProiectOLX {
 
     @Then("Acceptare cookie-uri")
     public void acceptareCookieUri() throws InterruptedException {
-        StartDriver.getDriver().findElement(By.xpath("//*[@id='onetrust-accept-btn-handler']")).click();
-//        sleep(1000);
+        StartDriver.getDriver().findElement(By.id("onetrust-accept-btn-handler")).click();
+        sleep(1000);
     }
 
 
