@@ -15,5 +15,3 @@ Feature:
     And         Folosirea scroll-ului pentru vizualizarea anunturilor
     Then        Selectare anunt
     Then        Click glisare foto anunt
-
-

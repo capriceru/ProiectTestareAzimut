@@ -21,11 +21,3 @@ Feature:
     Then      Introducerea "Lamborghini Urus" in bara de cautare
     And       Click pe butonul: Căutare
     And       Folosirea scroll-ului pentru vizualizarea anunturilor
-
-
-
-
-
-
-
-
